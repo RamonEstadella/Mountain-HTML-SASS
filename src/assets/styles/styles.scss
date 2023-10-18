@@ -1,0 +1,15 @@
+//GENERAL
+@import "general/variables";
+@import "general/normalize";
+@import "general/mixin";
+@import "general/btn";
+
+
+// LAYOUTS
+@import "layouts/footer";
+@import "layouts/header";
+@import "layouts/main";
+
+// FONTAWESOME
+@import "npm:@fortawesome/fontawesome-free/css/all.css";
+

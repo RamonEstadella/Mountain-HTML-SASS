@@ -1,0 +1,173 @@
+// Grid
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+@media (max-width: 34.6875rem) {
+    .grid {
+        grid-template-columns: none;
+    }
+}
+
+@media (max-width: 59.375rem) {
+    .quiensoy__h1 {
+        font-size: $font-size-big;
+    }
+}
+
+.span6 {
+    grid-column: span 6;
+}
+
+@media (max-width: 51.125rem) {
+    .span6{
+        grid-column: span 8;
+    }
+}
+
+// ¿Quien soy?
+
+.quien {
+    width: 100%;
+    background: {
+        image: url(../images/paisatge/postadesolmuntanya.jpg);
+        position: center;
+        size: cover;
+        attachment: fixed;
+    }
+    border-bottom: 5px solid $color-background;
+    
+}
+
+
+.quiensoy {
+    background-color: $color-background;
+    color: $color-letter;
+    display: flex;
+    flex-direction: column;
+    padding: 1.875rem;
+    opacity: 0.8;
+
+    &__h2 {
+        @include title;
+    }
+
+    @media (max-width: 59.375rem) {
+        &__h2 {
+            font-size: $font-size-respo;
+        }
+    }
+
+    &__p {
+        @include text;
+    }
+}
+
+.grid{
+    div {
+        justify-content: center;
+        align-items: center;
+    }
+} 
+
+
+// El proyecto
+
+.que {
+    width: 100%;
+    background-image: url(../images/paisatge/muntanya.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    border-bottom: 5px solid $color-background;
+}
+
+.miproyecto {
+    grid-column: 7/-1;
+    background-color:$color-background;
+    color: $color-letter;
+    display: flex;
+    flex-direction: column;
+    padding: 1.875rem;
+    opacity: 0.8;
+
+    &__h2 {
+        @include title;
+    }
+
+    &__p {
+        @include text;
+    }
+}
+
+@media (max-width: 51.125rem) {
+    .miproyecto {
+        grid-column: 5/-1;
+    }
+}
+
+@media (max-width: 22.25rem) {
+    .miproyecto {
+        padding: 0rem;
+    }
+}
+
+@media (max-width: 28.125rem) {
+    .miproyecto__p--display, .quiensoy__p--display, .libros__p--display {
+        display: none;
+    }
+}
+
+// Lecturas
+
+.lecturas {
+    width: 100%;
+    background-image: url(../images/paisatge/artem-sapegin-8c6eS43iq1o-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.libros {
+    background-color: $color-background;
+    color: $color-letter;
+    display: flex;
+    flex-direction: column;
+    padding: 1.875rem;
+    opacity: 0.9;
+
+    &__h2 {
+        @include title;
+    }
+
+    &__p {
+        @include text;
+    }
+
+    &__figure {
+        width: 200px;
+        height: 300px;
+        max-width: 500px;
+        margin: auto;
+        margin-bottom: 80px;
+        border: 6px solid $color-shadow-book;
+    }
+
+    &__img {
+        width: 200px;
+        height: 300px;
+    }
+
+    &__figcap {
+        text-align: center;
+        letter-spacing: 2px;
+    }
+}
+
+@media (max-width: 22.3125rem) {
+    .libros {
+        padding: 0rem;
+    }
+}

@@ -1,0 +1,59 @@
+.footer {
+    width: 100%;
+    height: 8.125rem;
+    background-color: $color-background;
+    color: $color-letter;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media (max-width: 42.5rem) {
+    .footer{
+        display: flex;
+        flex-direction: column;
+        height: 25rem;
+    }
+}
+
+.autor__img {
+    width: 4.375rem;
+    height: 4.375rem;
+    border-radius: 3.125rem;
+}
+
+.autor__h3, .socialmedia__h3, .contact__h3 {
+    @include subtitle;
+}
+
+.uoc__h3 {
+    margin-bottom: 0.625rem;
+}
+
+.socialmedia__link {
+    color: $color-letter;
+    margin-right: 0.625rem;
+    margin-left: 0.9375rem;
+    text-align: center;
+}
+
+.uoc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__img {
+        width: 6.25rem;
+        height: 4.375rem;
+        border-radius: 0.625rem;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
