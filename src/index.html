@@ -28,13 +28,14 @@
         </div>
 
         <div class="nav__title">
-          <h1 class="nav__h1">LECTURAS DE MONTAÑA</h1>
+          <h1 class="nav__h1">LA MONTAÑA</h1>
         </div>
 
         <!--WEB Menu-->
 
         <nav class="nav__menu" id="myTopnav">
-            <a class="nav__menu--link" href="#presentacion">INTRO</a></li>
+            <a class="nav__menu--link" href="#deportes">DEPORTES</a></li>
+            <a class="nav__menu--link" href="#presentacion">SOBRE MI</a></li>
             <a class="nav__menu--link" href="#project">PROYECTO</a></li>
             <a class="nav__menu--link" href="#literatura">LECTURAS</a></li>
             <a class="nav__menu--link" href="#contacto">CONTACTO</a></li>
@@ -49,10 +50,31 @@
 
         <!--¿Quien soy?-->
 
+        <section id="deportes" class="deportes">
+          <h2 class="deportes__h2">Deportes</h1>
+          <div class="deportes__container">
+            <figure class="deportes__figure">
+              <img class="deportes__img" src="./assets/images/alpinism/jon-hieb-LPQcqpbCxeY-unsplash.jpg" alt="libro">
+              <figcaption class="deportes__figcap">ALPINISMO</figcaption>  
+            </figure>
+
+            <figure class="deportes__figure">
+              <img class="deportes__img" src="./assets/images/rock-climbing/fionn-claydon-1Gk_E2SWbLY-unsplash.jpg" alt="libro">
+              <figcaption class="deportes__figcap">ESCALADA EN ROCA</figcaption>  
+            </figure>
+
+            <figure class="deportes__figure">
+              <img class="deportes__img" src="./assets/images/ice-climbing/matt-forster-wQTtONMepCw-unsplash.jpg" alt="libro">
+              <figcaption class="deportes__figcap">ESCALADA EN HIELO</figcaption>  
+            </figure>
+          </div>
+
+        </section>
+
         <section id="presentacion" class="grid quien">
             <div class="span6 quiensoy">
                 
-                <h2 class="quiensoy__h2">Intro</h2>
+                <h2 class="quiensoy__h2">Sobre Mi</h2>
                 <p class="quiensoy__p">
                     Mi nombre es Ramon Estadella Serra. Nací un 7 de febrero de 1997. Dicen que soy químico y programador... y sobretodo alpinista. Mi pasión en esta vida es la montaña y los deportes que se pueden realizar en ella. Me encanta la literatura de montaña, sus poesias, sus narrativas, y sus libros de entrenamiento y nutrición.
                 </p>
@@ -72,7 +94,7 @@
             <div class="span6 miproyecto">
                 <h2 class="miproyecto__h2">El proyecto</h2>
                 <p class="miproyecto__p">
-                    Esta web es un proyecto de la asignatura de Heramientas HTML y CSS II, del Máster de Desarrollo Web de la UOC. Consiste en un simple tratado sobre literatura del alpinismo, mi pasión. Presento, los que son para mí, los mejores libros de alpinismo que se han publicado. 
+                    Esta web es un proyecto de la asignatura de Heramientas HTML y CSS II, del Máster de Desarrollo Web de la UOC. Consiste en un simple tratado sobre literatura del alpinismo y deportes de montaña, mi pasión. Presento, los que son para mí, los mejores libros de alpinismo que se han publicado. 
                     
                 </p>
                 <p class="miproyecto__p miproyecto__p--display">
@@ -84,44 +106,29 @@
 
         <!--Lecturas-->
 
-        <section id="literatura" class="grid lecturas">
-            <div class="span6 libros">
+        <section id="literatura" class="lecturas">
+            <div class="libros">
                 <h2 class="libros__h2">Lecturas</h2>
                 <p class="libros__p">
                   Estas son, para mi, las mejores lecturas sobre alpinismo, los mejores libros escritos por los mejores alpinistas: "Touching the Void", "Confesiones de un Escalador en Serie" y  "Entrenamiento para el Nuevo Alpinismo".
                 </p>
+                <div class="libros__container">
+                  <figure class="libros__figure">
+                    <img class="libros__img" src="./assets/images/libros/TocandoelVacio.png" alt="libro">
+                    <figcaption class="libros__figcap">"Touching the Void" por Joe Simpson.</figcaption>  
+                  </figure>
+                  
+                  <figure class="libros__figure">
+                    <img class="libros__img" src="./assets/images/libros/besaoMata.png" alt="libro">
+                    <figcaption class="libros__figcap">"Confesiones de un Escalador en Serie" por Mark Twight.</figcaption>  
+                  </figure>
                 
-                <p class="libros__p libros__p--display">
-                  "Touching the Void" por Joe Simpson:
-                  Este libro relata la historia de Joe Simpson y Simon Yates, dos alpinistas británicos que enfrentaron una tragedia en los Andes peruanos en 1985. Simpson sufrió una grave lesión y una lucha por la supervivencia. La narración es intensa y emocionante, mostrando la resistencia y la determinación humanas en situaciones límite.
-                </p>
-                <figure class="libros__figure">
-                  <img class="libros__img" src="./assets/images/libros/TocandoelVacio.png" alt="libro">
-                  <figcaption class="libros__figcap">"Touching the Void" por Joe Simpson.</figcaption>  
-                </figure>
+                  <figure class="libros__figure">
+                    <img class="libros__img" src="./assets/images/libros/Nuevoalpinismo.png" alt="libro">
+                    <figcaption class="libros__figcap">"Entrenamiento para el Nuevo Alpinismo" por Steve House y Scott Johnston.</figcaption>  
+                  </figure>
+                </div>
                 
-
-                <p class="libros__p libros__p--display">
-                  "Confesiones de un Escalador en Serie" por Mark Twight:
-                  Es un libro escrito por Mark Twight, un alpinista y escalador de renombre. El libro es una colección de ensayos y relatos en los que Twight reflexiona sobre sus experiencias en el mundo del alpinismo extremo y la búsqueda de límites personales en la montaña.
-                  Twight explora temas como el riesgo, el miedo, la obsesión y la pasión por la escalada. 
-                </p>
-                <figure class="libros__figure">
-                  <img class="libros__img" src="./assets/images/libros/besaoMata.png" alt="libro">
-                  <figcaption class="libros__figcap">"Confesiones de un Escalador en Serie" por Mark Twight.</figcaption>  
-                </figure>
-                
-
-                <p class="libros__p libros__p--display">
-                  "Entrenamiento para el Nuevo Alpinismo" por Steve House y Scott Johnston: 
-                  Se centra en proporcionar una guía integral sobre la preparación física y mental para el alpinismo y el montañismo. El libro aborda temas como la planificación de entrenamiento, la nutrición, la aclimatación, la técnica, la seguridad y la toma de decisiones en el entorno alpino. 
-                </p>
-                <figure class="libros__figure">
-                  <img class="libros__img" src="./assets/images/libros/Nuevoalpinismo.png" alt="libro">
-                  <figcaption class="libros__figcap">"Entrenamiento para el Nuevo Alpinismo" por Steve House y Scott Johnston.</figcaption>  
-                </figure>
-                
-
                 <button class="btn libros__btn">Leer más</button>
             </div>
         </section>

@@ -124,10 +124,7 @@
 
 .lecturas {
     width: 100%;
-    background-image: url(../images/paisatge/artem-sapegin-8c6eS43iq1o-unsplash.jpg);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+    background-color: black;
 }
 
 .libros {
@@ -135,6 +132,8 @@
     color: $color-letter;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 1.875rem;
     opacity: 0.9;
 
@@ -144,6 +143,7 @@
 
     &__p {
         @include text;
+        margin-bottom: 3.125rem;
     }
 
     &__figure {
@@ -152,7 +152,6 @@
         max-width: 500px;
         margin: auto;
         margin-bottom: 80px;
-        border: 6px solid $color-shadow-book;
     }
 
     &__img {
@@ -166,8 +165,43 @@
     }
 }
 
+.libros__container {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
 @media (max-width: 22.3125rem) {
     .libros {
         padding: 0rem;
     }
+}
+
+.deportes {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.deportes__h2 {
+    color: white;
+    @include title;
+}
+
+.deportes__img {
+    padding: 10px;
+    width: 550px;
+    height: 400px;
+}
+
+.deportes__figcap {
+    font-size: 10px;
+    text-align: center;
+} 
+
+.deportes__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
