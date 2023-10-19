@@ -3,27 +3,21 @@
 .grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-}
 
-@media (max-width: 34.6875rem) {
-    .grid {
-        grid-template-columns: none;
-    }
-}
-
-@media (max-width: 59.375rem) {
-    .quiensoy__h1 {
-        font-size: $font-size-big;
+    @media (max-width: 34.6875rem) {
+        .grid {
+            grid-template-columns: none;
+        }
     }
 }
 
 .span6 {
     grid-column: span 6;
-}
 
-@media (max-width: 51.125rem) {
-    .span6{
-        grid-column: span 8;
+    @media (max-width: 51.125rem) {
+        .span6{
+            grid-column: span 8;
+        }
     }
 }
 
@@ -62,12 +56,17 @@
     &__p {
         @include text;
     }
+
+    @media (max-width: 375px) {
+        .quiensoy {
+            padding: 0rem;
+        }
+    }
 }
 
-
-@media (max-width: 375px) {
-    .quiensoy {
-        padding: 0rem;
+@media (max-width: 59.375rem) {
+    .quiensoy__h1 {
+        font-size: $font-size-big;
     }
 }
 
@@ -76,9 +75,9 @@
 }
 
 .quiensoy__img {
-    padding: 10px;
-    width: 300px;
-    height: 400px;
+    padding: 0.625rem;
+    width: 18.75rem;
+    height: 25rem;
 }
 
 .quiensoy__figcap {
@@ -119,19 +118,20 @@
     &__p {
         @include text;
     }
-}
 
-@media (max-width: 51.125rem) {
-    .miproyecto {
-        grid-column: 5/-1;
+    @media (max-width: 51.125rem) {
+        .miproyecto {
+            grid-column: 5/-1;
+        }
+    }
+    
+    @media (max-width: 22.25rem) {
+        .miproyecto {
+            padding: 0rem;
+        }
     }
 }
 
-@media (max-width: 22.25rem) {
-    .miproyecto {
-        padding: 0rem;
-    }
-}
 
 @media (max-width: 28.125rem) {
     .miproyecto__p--display, .quiensoy__p--display, .libros__p--display {
@@ -166,46 +166,48 @@
     }
 
     &__figure {
-        width: 200px;
-        height: 300px;
-        max-width: 500px;
+        width: 12.5rem;
+        height: 18.75rem;
+        max-width: 31.25rem;
         margin: auto;
-        margin-bottom: 80px;
+        margin-bottom: 5rem;
     }
 
     &__img {
-        width: 200px;
-        height: 300px;
+        width: 12.5rem;
+        height: 18.75rem;
     }
 
     &__figcap {
         text-align: center;
     }
-}
 
-@media (max-width: 22.3125rem) {
-    .libros {
-        padding: 0rem;
+    @media (max-width: 22.3125rem) {
+        .libros {
+            padding: 0rem;
+        }
     }
 }
+
 
 .libros__container {
     display: flex;
     flex-direction: row;
-    gap: 100px;
-}
+    gap: 6.25rem;
 
-@media (max-width: 875px) {
-    .libros__container {
-        gap: 20px;
+    @media (max-width: 54.6875rem) {
+        .libros__container {
+            gap: 1.25rem;
+        }
+    }
+
+    @media (max-width: 43.375rem) {
+        .libros__container {
+            flex-direction: column;
+        }
     }
 }
 
-@media (max-width: 694px) {
-    .libros__container {
-        flex-direction: column;
-    }
-}
 
 
 
@@ -224,61 +226,61 @@
 }
 
 .deportes__img {
-    padding: 10px;
-    width: 550px;
-    height: 400px;
-}
+    padding: 0.625rem;
+    width: 34.375rem;
+    height: 25rem;
 
-@media (max-width: 1651px) {
-    .deportes__img {
-        padding: 10px;
-        width: 450px;
-        height: 350px;
+    @media (max-width: 103.1875rem) {
+        .deportes__img {
+            padding: 0.625rem;
+            width: 28.125rem;
+            height: 21.875rem;
+        }
     }
-}
-
-@media (max-width: 1371px) {
-    .deportes__img {
-        padding: 10px;
-        width: 400px;
-        height: 300px;
+    
+    @media (max-width: 85.6875rem) {
+        .deportes__img {
+            padding: 0.625rem;
+            width: 25rem;
+            height: 18.75rem;
+        }
     }
-}
-
-@media (max-width: 1265px) {
-    .deportes__img {
-        padding: 10px;
-        width: 300px;
-        height: 250px;
+    
+    @media (max-width: 79.0625rem) {
+        .deportes__img {
+            padding: 0.625rem;
+            width: 18.75rem;
+            height: 15.625rem;
+        }
     }
-}
-
-@media (max-width: 903px) {
-    .deportes__img {
-        padding: 10px;
-        width: 250px;
-        height: 200px;
+    
+    @media (max-width: 56.4375rem) {
+        .deportes__img {
+            padding: 0.625rem;
+            width: 15.625rem;
+            height: 12.5rem;
+        }
     }
-}
-
-@media (max-width: 752px) {
-    .deportes__img {
-        padding: 10px;
-        width: 400px;
-        height: 300px;
+    
+    @media (max-width: 47rem) {
+        .deportes__img {
+            padding: 0.625rem;
+            width: 25rem;
+            height: 18.75rem;
+        }
     }
-}
-
-@media (max-width: 407px) {
-    .deportes__img {
-        padding: 10px;
-        width: 250px;
-        height: 200px;
+    
+    @media (max-width: 25.4375rem) {
+        .deportes__img {
+            padding: 0.625rem;
+            width: 15.625rem;
+            height: 12.5rem;
+        }
     }
 }
 
 .deportes__figcap {
-    font-size: 10px;
+    font-size: 0.625rem;
     text-align: center;
 } 
 
@@ -287,19 +289,16 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-}
 
-
-@media (max-width: 752px) {
-    .deportes__container {
-        flex-direction: column;
+    @media (max-width: 47rem) {
+        .deportes__container {
+            flex-direction: column;
+        }
     }
 }
 
-
-
 .deportes__p {
     @include text;
-    font-size: 16px;
+    font-size: 1rem;
     text-align: center;
 }
