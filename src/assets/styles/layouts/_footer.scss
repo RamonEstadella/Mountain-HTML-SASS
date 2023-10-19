@@ -1,19 +1,17 @@
 .footer {
     width: 100%;
     height: 8.125rem;
-    background-color: $color-background;
-    color: $color-letter;
+    background-color: $color-btn-libros;
+    color: $color-background;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 
     @media (max-width: 42.5rem) {
-        .footer{
-            display: flex;
-            flex-direction: column;
-            height: 25rem;
-        }
+        display: flex;
+        flex-direction: column;
+        height: 25rem;
     }
 }
 
