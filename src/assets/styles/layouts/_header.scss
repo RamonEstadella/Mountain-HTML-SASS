@@ -71,25 +71,12 @@
     padding: $padding-30;
     background-color: $color-background;
 
-    @media (max-width: 44.875rem) {
-        justify-content: end;
+    @media (max-width: 51.1875rem) {
+        flex-direction: column;
+        height: 15rem;
+        align-items: center;
     }
 }
-
-.hamburger {
-    display: none;
-    background-color:$color-background;
-    color: $color-letter;
-
-    @media (max-width: 44.875rem) {
-        font-size: 2.1875rem;
-        display: block;
-    }
-}
-
-
-
-
 
 .nav__menu--link {
     color: $color-letter;
@@ -104,10 +91,6 @@
     &:hover {
         background-color: $color-letter;
         color: $color-background;
-    }
-
-    @media (max-width: 44.875rem) {
-        display: none;
     }
 }
 
