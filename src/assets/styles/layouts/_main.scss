@@ -81,6 +81,11 @@
     height: 400px;
 }
 
+.quiensoy__figcap {
+    text-align: center;
+    letter-spacing: 2px;
+}
+
 .grid{
     div {
         justify-content: center;
@@ -176,7 +181,6 @@
 
     &__figcap {
         text-align: center;
-        letter-spacing: 2px;
     }
 }
 
