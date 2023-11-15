@@ -1,0 +1,47 @@
+// Mixin text p
+
+@mixin text {
+    padding: $padding-20;
+    text-align: center;
+    letter-spacing: 0.125rem;
+    line-height: 1.5;
+}
+
+// Mixin title h2
+
+@mixin title {
+    font: {
+        size: 3.125rem;
+        family: $font-family-text;
+    }
+    letter-spacing: 0.5rem;
+    line-height: 1.5;
+    padding: 1.25rem;
+    text-align: center;
+}
+
+// Mixin footer h3
+
+@mixin subtitle {
+    font: {
+        family: $font-family-text;
+        weight: bold;
+    }
+    padding-bottom: 0.3125rem;
+    margin-bottom: 0.625rem;
+    text-align: center;
+    letter-spacing: 0.5625rem;
+}
+
+// Mixin Button
+
+@mixin btn {
+    height: 3.125rem;
+    width: 9.375rem;
+    color: $color-background;
+    font-size: $font-size-small;
+    font-weight: bold;
+    border-radius: 3.125rem;
+    margin-top: 3.125rem;
+    transition: transform 0.2s;
+}

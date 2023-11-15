@@ -1,0 +1,54 @@
+// BUTTON
+
+.btn {
+    @include btn;
+}
+
+.btn:hover {
+    transform: scale(1.3);
+}
+
+.quiensoy__btn {
+    background-color: $color-btn-quiensoy;
+    margin-bottom: 3.125rem;
+}
+
+.miproyecto__btn {
+    background-color: $color-btn-miproyecto;
+    margin-bottom: 3.125rem;
+}
+
+.libros__btn {
+    background-color: $color-btn-libros;
+    margin-bottom: 3.125rem;
+    text-align: center;
+}
+
+.btn-top {
+    position: fixed;
+    bottom: 1.25rem;
+    right: 1.25rem;
+    width: 3.125rem;
+    height: 3.125rem;
+    background: $color-letter;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: $font-size-mid;
+    color: $color-background;
+    z-index: 1;
+    transition: all .5s;
+    border-radius: 0.625rem;
+
+    @media (max-width: 28.125rem) {
+        right: 2.8125rem;
+        
+    }
+}
+
+
+
+
+
+

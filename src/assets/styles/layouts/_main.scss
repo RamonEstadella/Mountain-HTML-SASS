@@ -1,0 +1,276 @@
+// Grid
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    @media (max-width: 34.6875rem) {
+        grid-template-columns: none;
+    }
+}
+
+.span6 {
+    grid-column: span 6;
+
+    @media (max-width: 51.125rem) {
+        grid-column: span 8;
+    }
+}
+
+// ¿Quien soy?
+
+.quien {
+    width: 100%;
+    background: {
+        image: url(../images/paisatge/DSC_4599.jpg);
+        position: center;
+        size: cover;
+        attachment: fixed;
+    }
+    border-bottom: 5px solid $color-background;
+    
+}
+
+
+.quiensoy {
+    background-color: $color-background;
+    color: $color-letter;
+    display: flex;
+    flex-direction: column;
+    padding: 1.875rem;
+
+    &__h2 {
+        @include title;
+    }
+
+    @media (max-width: 59.375rem) {
+        &__h2 {
+            font-size: $font-size-respo;
+        }
+    }
+
+    &__p {
+        @include text;
+    }
+
+    @media (max-width: 375px) {
+        padding: 0rem;
+    }
+}
+
+@media (max-width: 59.375rem) {
+    .quiensoy__h1 {
+        font-size: $font-size-big;
+    }
+}
+
+.quiensoy__figure {
+    text-align: center;
+}
+
+.quiensoy__img {
+    padding: 0.625rem;
+    width: 18.75rem;
+    height: 25rem;
+}
+
+.quiensoy__figcap {
+    text-align: center;
+}
+
+.grid{
+    div {
+        justify-content: center;
+        align-items: center;
+    }
+} 
+
+
+// El proyecto
+
+.que {
+    width: 100%;
+    background-image: url(../images/paisatge/neumuntanya.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    border-bottom: 5px solid $color-background;
+}
+
+.miproyecto {
+    grid-column: 7/-1;
+    background-color:$color-background;
+    color: $color-letter;
+    display: flex;
+    flex-direction: column;
+    padding: 1.875rem;
+
+    &__h2 {
+        @include title;
+    }
+
+    &__p {
+        @include text;
+    }
+
+    @media (max-width: 51.125rem) {
+        grid-column: 5/-1;
+    }
+    
+    @media (max-width: 22.25rem) {
+        padding: 0rem;
+    }
+}
+
+
+@media (max-width: 28.125rem) {
+    .miproyecto__p--display, .quiensoy__p--display, .libros__p--display {
+        display: none;
+    }
+}
+
+// Lecturas
+
+.lecturas {
+    width: 100%;
+    background-color: black;
+}
+
+.libros {
+    background-color: $color-background;
+    color: $color-letter;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.875rem;
+    opacity: 0.9;
+
+    &__h2 {
+        @include title;
+    }
+
+    &__p {
+        @include text;
+        margin-bottom: 3.125rem;
+    }
+
+    &__figure {
+        width: 12.5rem;
+        height: 18.75rem;
+        max-width: 31.25rem;
+        margin: auto;
+        margin-bottom: 5rem;
+    }
+
+    &__img {
+        width: 12.5rem;
+        height: 18.75rem;
+    }
+
+    &__figcap {
+        text-align: center;
+    }
+
+    @media (max-width: 22.3125rem) {
+        padding: 0rem;
+    }
+}
+
+
+.libros__container {
+    display: flex;
+    flex-direction: row;
+    gap: 6.25rem;
+
+    @media (max-width: 54.6875rem) {
+        gap: 1.25rem;
+    }
+
+    @media (max-width: 43.375rem) {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+//Mis Deportes
+
+.deportes {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.deportes__h2 {
+    color: white;
+    @include title;
+}
+
+.deportes__img {
+    padding: 0.625rem;
+    width: 34.375rem;
+    height: 25rem;
+
+    @media (max-width: 1651rem) {
+        padding: 0.625rem;
+        width: 28.125rem;
+        height: 21.875rem;
+    }
+    
+    
+    @media (max-width: 85.6875rem) {
+        padding: 0.625rem;
+        width: 25rem;
+        height: 18.75rem;   
+    }
+    
+    @media (max-width: 79.0625rem) {
+        padding: 0.625rem;
+        width: 18.75rem;
+        height: 15.625rem;
+    }
+    
+    @media (max-width: 56.4375rem) {
+        padding: 0.625rem;
+        width: 15.625rem;
+        height: 12.5rem;
+        
+    }
+    
+    @media (max-width: 47rem) {
+        padding: 0.625rem;
+        width: 25rem;
+        height: 18.75rem;
+    }
+    
+    @media (max-width: 25.4375rem) {
+        padding: 0.625rem;
+        width: 15.625rem;
+        height: 12.5rem;
+    }
+}
+
+.deportes__figcap {
+    font-size: 0.625rem;
+    text-align: center;
+} 
+
+.deportes__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 47rem) {
+        flex-direction: column;
+    }
+}
+
+.deportes__p {
+    @include text;
+    font-size: 1rem;
+    text-align: center;
+}

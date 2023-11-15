@@ -1,0 +1,97 @@
+.nav__title {
+    background: {
+        image: url(../images/paisatge/nathan-anderson-roZgc7SXXmI-unsplash.jpg);
+        position: center;
+        size: cover;
+        
+    }
+}
+
+
+// H1
+
+.nav__h1 {
+    font-size: $font-size-xl;
+    font-weight: bold;
+    font-family: $font-family-h1;
+    text-align: center;
+    color: $color-background;
+    padding: 2.5rem;
+    letter-spacing: 0.625rem;
+    text-shadow: 0.125rem 0.125rem 0.25rem $color-shadow-book;
+    border-bottom: 0.3125rem solid black;
+
+    @media (max-width: 28.125rem) {
+        font-size: $font-size-big-title;
+    }
+    
+    @media (max-width: 23.4275rem) {
+        font-size: $font-size-respo;
+    }
+}
+
+// Menu Social Media
+
+.nav__social {
+    background-color: $color-background;
+    color: $color-letter;
+    width: 100%;
+    padding: $padding-10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*position: fixed;
+    z-index: 3;*/
+
+    &--link {
+        color: $color-letter;
+        opacity: 0.5;
+        font-size: $font-size-mid;
+        margin: 0 1.875rem;
+        transition: all .5s;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    @media (max-width: 22.25rem) {
+        padding: 0.625rem;
+    }
+}
+
+// WEB Menu
+
+.nav__menu {
+    width: 100%;
+    height: 3.125rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: $padding-30;
+    background-color: $color-background;
+
+    @media (max-width: 51.1875rem) {
+        flex-direction: column;
+        height: 15rem;
+        align-items: center;
+    }
+}
+
+.nav__menu--link {
+    color: $color-letter;
+    opacity: 0.85;
+    padding: $padding-10;
+    font-size: $font-size-small;
+    font-weight: 600;
+    letter-spacing: 0.125rem;
+    border-radius: 3.125rem;
+    transition: all .3s;
+
+    &:hover {
+        background-color: $color-letter;
+        color: $color-background;
+    }
+}
+
+
